@@ -1,0 +1,103 @@
+[v-cloak] {
+  display: none;
+}
+
+* {
+  font-family: 'PingFangTC', 'Microsoft JhengHei', 'Helvetica Neue', Helvetica,
+    Arial, sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  &.scroll-disabled {
+    overflow: hidden;
+  }
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+select,
+button,
+textarea {
+}
+
+button {
+}
+
+html {
+}
+
+/* FOR MOZILLA */
+
+@-moz-document url-prefix() {
+}
+
+/* FOR CHROME */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* Safari and Chrome, if Chrome rule needed */
+}
+
+/* Safari 5+ ONLY */
+
+::i-block-chrome {
+}
+
+p {
+}
+
+h1 {
+}
+
+h2 {
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='password'] {
+}
+
+input[type='number'] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  -moz-appearance: textfield; /* Firefox */
+}
+
+textarea {
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
